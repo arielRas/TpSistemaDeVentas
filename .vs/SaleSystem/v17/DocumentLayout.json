@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{23AF4E9D-38A7-4D08-8D89-1B6310C496E0}|UI\\UI.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\ui\\saleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{23AF4E9D-38A7-4D08-8D89-1B6310C496E0}|UI\\UI.csproj|solutionrelative:ui\\saleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SaleForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\UI\\SaleForm.cs",
+              "RelativeDocumentMoniker": "UI\\SaleForm.cs",
+              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\UI\\SaleForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UI\\SaleForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T22:24:39.123Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
