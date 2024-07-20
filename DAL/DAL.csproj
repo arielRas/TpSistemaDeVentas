@@ -42,7 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CityDao.cs" />
     <Compile Include="CustomerDao.cs" />
+    <Compile Include="CustomerIdentifierTypeDao.cs" />
+    <Compile Include="CustomerTypeDao.cs" />
+    <Compile Include="OrderDao.cs" />
+    <Compile Include="OrderItemDao.cs" />
     <Compile Include="ProductBrandDao.cs" />
     <Compile Include="ProductCategoryDao.cs" />
     <Compile Include="ProductDao.cs" />

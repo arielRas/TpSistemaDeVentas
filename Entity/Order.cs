@@ -8,10 +8,10 @@ namespace Entity
 {
     public class Order
     {
-        public Guid IdOrder { get; set; }
+        public int IdOrder { get; set; }
         public DateTime Date { get; set; }
-        public string DeliveryMethod { get; set; }
-        public List<Product> Products { get; set; }
+        public DeliveryMethod _DeliveryMethod{ get; set; }
+        public List<OrderItem> Items{ get; set; }
         public List<Promotion> Promotions { get; set; }        
     }
 }
