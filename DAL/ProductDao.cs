@@ -6,11 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Xml.Linq;
+using System.Threading;
 
 namespace DAL
 {
     public class ProductDao
     {
+        private readonly ProductBrandDao _brandDao = new ProductBrandDao();
+        private readonly ProductCategoryDao _categoryDao = new ProductCategoryDao();
+
         public Product GetProductById(int idProduct)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
@@ -219,6 +224,26 @@ namespace DAL
                 }
             }
             catch { throw; }
+        }
+    
+        public void AddProduct(Product product)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
+
+            string sqlQuery = "INSERT INTO [PRODUCT] VALUES(@name, @idBrand, @idCategory)";
+
+            using(var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using(var command = new SqlCommand(sqlQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@name", product.Name);
+                    command.Parameters.AddWithValue("@idBrand", _brandDao.GetIdByName(product.Brand));
+                    command.Parameters.AddWithValue("@idCategory", _categoryDao.GetIdByName(product.Category));
+                    command.ExecuteNonQuery();
+                }
+            }
         }
     }
 }
