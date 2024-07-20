@@ -10,9 +10,13 @@ namespace Entity
     {
         public string LastName { get; set; }
         public string Name { get; set; }
-        public Int64 Dni { get; set; }
+        public string Gender { get; set; }
         public DateTime BirthDate { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
+        public string State {  get; set; }
+        public string City { get; set; }
+        public string Street { get; set; }
+        public int Number { get; set; }
     }
 }

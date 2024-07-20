@@ -21,7 +21,6 @@ namespace Business
             catch { throw; }            
         }
 
-
         public Product GetProductById(int idProduct)
         {
             try
@@ -32,6 +31,39 @@ namespace Business
             }
             catch { throw; }            
         }
+
+        public List<Product> GetAllProducts() 
+        {
+            try
+            {
+                List<Product> products = productDao.GetAllProducts();
+                products.ForEach(p => p.Price = GetCurrentPrice(p.IdProduct));
+                return products;
+            }
+            catch { throw; }            
+        }
+
+        public List<Product> GetProductsByCategory(string category)
+        {
+            try
+            {
+                List<Product> products = productDao.GetProductsByCategory(category);
+                products.ForEach(p => p.Price = GetCurrentPrice(p.IdProduct));
+                return products;
+            }
+            catch { throw; }
+        }
+
+        public List<Product> GetProductsByBrand(string brand)
+        {
+            try
+            {
+                List<Product> products = productDao.GetProductsByBrand(brand);
+                products.ForEach(p => p.Price = GetCurrentPrice(p.IdProduct));
+                return products;
+            }
+            catch { throw; }
+        }        
 
     }
 }

@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerDao.cs" />
+    <Compile Include="ProductBrandDao.cs" />
+    <Compile Include="ProductCategoryDao.cs" />
     <Compile Include="ProductDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
