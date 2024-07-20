@@ -3,26 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23AF4E9D-38A7-4D08-8D89-1B6310C496E0}|UI\\UI.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\ui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{23AF4E9D-38A7-4D08-8D89-1B6310C496E0}|UI\\UI.csproj|solutionrelative:ui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\salesemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\salesemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23AF4E9D-38A7-4D08-8D89-1B6310C496E0}|UI\\UI.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\ui\\saleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{23AF4E9D-38A7-4D08-8D89-1B6310C496E0}|UI\\UI.csproj|solutionrelative:ui\\saleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -34,76 +14,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Product.cs",
-              "RelativeDocumentMoniker": "Entity\\Product.cs",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Product.cs",
-              "RelativeToolTip": "Entity\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T23:49:01.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\UI\\App.config",
-              "RelativeDocumentMoniker": "UI\\App.config",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\UI\\App.config",
-              "RelativeToolTip": "UI\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-07-18T23:24:57.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductDao.cs",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\ProductDao.cs",
-              "RelativeDocumentMoniker": "DAL\\ProductDao.cs",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\ProductDao.cs",
-              "RelativeToolTip": "DAL\\ProductDao.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T23:23:48.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Order.cs",
-              "RelativeDocumentMoniker": "Entity\\Order.cs",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Order.cs",
-              "RelativeToolTip": "Entity\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T23:15:52.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SalesEmployee.cs",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\SalesEmployee.cs",
-              "RelativeDocumentMoniker": "Entity\\SalesEmployee.cs",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\SalesEmployee.cs",
-              "RelativeToolTip": "Entity\\SalesEmployee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T23:08:46.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "SaleForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\UI\\SaleForm.cs",
               "RelativeDocumentMoniker": "UI\\SaleForm.cs",
