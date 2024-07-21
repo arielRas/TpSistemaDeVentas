@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\dal\\promotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\promotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\business\\promotionbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|solutionrelative:business\\promotionbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\promotionbyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\promotionbyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\dal\\promotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\promotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\entity\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +46,37 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "PromotionBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Business\\PromotionBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\PromotionBusiness.cs",
+              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Business\\PromotionBusiness.cs",
+              "RelativeToolTip": "Business\\PromotionBusiness.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T13:58:26.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductDao.cs",
+              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\ProductDao.cs",
+              "RelativeDocumentMoniker": "DAL\\ProductDao.cs",
+              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\ProductDao.cs",
+              "RelativeToolTip": "DAL\\ProductDao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T13:56:05.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PromotionByProduct.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\PromotionByProduct.cs",
               "RelativeDocumentMoniker": "Entity\\PromotionByProduct.cs",
@@ -55,20 +89,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PromotionDao.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\PromotionDao.cs",
               "RelativeDocumentMoniker": "DAL\\PromotionDao.cs",
               "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\PromotionDao.cs",
               "RelativeToolTip": "DAL\\PromotionDao.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAgwEUAAAARAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAHgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T11:28:14.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Promotion.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Promotion.cs",
               "RelativeDocumentMoniker": "Entity\\Promotion.cs",
@@ -81,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "OrderBusiness.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Business\\OrderBusiness.cs",
               "RelativeDocumentMoniker": "Business\\OrderBusiness.cs",
@@ -94,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Item.cs",
               "RelativeDocumentMoniker": "Entity\\Item.cs",
@@ -107,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Order.cs",
               "RelativeDocumentMoniker": "Entity\\Order.cs",
@@ -120,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "SaleForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\UI\\SaleForm.cs",
               "RelativeDocumentMoniker": "UI\\SaleForm.cs",
