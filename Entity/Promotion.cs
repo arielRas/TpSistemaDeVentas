@@ -12,7 +12,6 @@ namespace Entity
         public string Description { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public float DiscountPercentage { get; set; }
-
+        public int DiscountPercentage { get; set; }
     }
 }

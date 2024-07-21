@@ -51,6 +51,7 @@
     <Compile Include="ProductBrandDao.cs" />
     <Compile Include="ProductCategoryDao.cs" />
     <Compile Include="ProductDao.cs" />
+    <Compile Include="PromotionDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

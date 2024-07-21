@@ -8,7 +8,6 @@ namespace Entity
 {
     public class PromotionByQuantity : Promotion
     {
-        public List<Product> Products { get; set; }
-        public int Quantity { get; set; }
+        public List<Item> Products { get; set; }
     }
 }

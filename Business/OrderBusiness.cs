@@ -21,9 +21,9 @@ namespace Business
             {
                 using(var trx = new TransactionScope())
                 {
-                    DateTime date = DateTime.Now;
+                    order.Date = DateTime.Now;
 
-                    order.IdOrder = _orderDao.AddOrder(idCustomer, idEmployee, date, (int)order._DeliveryMethod);
+                    order.IdOrder = _orderDao.AddOrder(idCustomer, idEmployee, order.Date, (int)order._DeliveryMethod);
 
                     order.Items.ForEach(I => _itemDao.AddOrderItem(order.IdOrder, I));
 

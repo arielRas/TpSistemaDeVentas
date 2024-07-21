@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class OrderItem
+    public class Item
     {
         public Product _product { get; set; }
         public int Quantity { get; set; }

@@ -11,7 +11,7 @@ namespace DAL
 {
     public class OrderItemDao
     {
-        public void AddOrderItem(int idOrder, OrderItem item)
+        public void AddOrderItem(int idOrder, Item item)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
 

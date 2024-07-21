@@ -11,7 +11,7 @@ namespace Entity
         public int IdOrder { get; set; }
         public DateTime Date { get; set; }
         public DeliveryMethod _DeliveryMethod{ get; set; }
-        public List<OrderItem> Items{ get; set; }
+        public List<Item> Items{ get; set; }
         public List<Promotion> Promotions { get; set; }        
     }
 }
