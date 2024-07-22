@@ -245,5 +245,63 @@ namespace DAL
                 }
             }
         }
+
+        public void UpdateStockById(int idProduct, int quantity)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
+
+            string sqlQuery = "UPDATE PRODUCT_STOCK SET STOCK = STOCK - @quantity WHERE ID_PRODUCT = @idProduct";
+
+            using(var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using(var command = new SqlCommand(sqlQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@quantity", quantity);
+                    command.Parameters.AddWithValue("@idProduct", idProduct);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public int GetStockById(int idProduct) 
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
+
+            string sqlQuery = "SELECT STOCK FROM PRODUCT_STOCK WHERE ID_PRODUCT = @idProduct";
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (var command = new SqlCommand(sqlQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@idProduct", idProduct);
+                    var stock = command.ExecuteScalar();
+                    return Convert.ToInt32(stock);
+                }
+            }
+        }
+
+        public bool IsInStock(int idProduct, int quantity)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
+
+            string sqlQuery = "SELECT dbo.FN_IS_PRODUCT_IN_STOCK(@idProduct, @quantity)";
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (var command = new SqlCommand(sqlQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@idProduct", idProduct);
+                    command.Parameters.AddWithValue("@quantity", quantity);
+                    var result = command.ExecuteScalar();
+                    return (int)result == 1;
+                }
+            }
+        }
     }
 }

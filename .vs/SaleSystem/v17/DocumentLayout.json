@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\business\\promotionbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|solutionrelative:business\\promotionbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\promotionbyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\promotionbyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\dal\\promotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\promotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\business\\orderbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|solutionrelative:business\\orderbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\entity\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\entity\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\dal\\orderdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\orderdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\business\\orderbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|solutionrelative:business\\orderbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\dal\\orderpromotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\orderpromotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\dal\\promotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\promotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|c:\\users\\ariel\\desktop\\repositorios\\salesystem\\business\\promotionbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|solutionrelative:business\\promotionbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23AF4E9D-38A7-4D08-8D89-1B6310C496E0}|UI\\UI.csproj|C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\ui\\saleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -46,122 +42,110 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PromotionBusiness.cs",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Business\\PromotionBusiness.cs",
-              "RelativeDocumentMoniker": "Business\\PromotionBusiness.cs",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Business\\PromotionBusiness.cs",
-              "RelativeToolTip": "Business\\PromotionBusiness.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T13:58:26.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProductDao.cs",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\ProductDao.cs",
-              "RelativeDocumentMoniker": "DAL\\ProductDao.cs",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\ProductDao.cs",
-              "RelativeToolTip": "DAL\\ProductDao.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAXAAAA",
+              "Title": "OrderPromotionDao.cs",
+              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\OrderPromotionDao.cs",
+              "RelativeDocumentMoniker": "DAL\\OrderPromotionDao.cs",
+              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\OrderPromotionDao.cs",
+              "RelativeToolTip": "DAL\\OrderPromotionDao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T13:56:05.619Z",
+              "WhenOpened": "2024-07-21T16:00:23.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PromotionByProduct.cs",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\PromotionByProduct.cs",
-              "RelativeDocumentMoniker": "Entity\\PromotionByProduct.cs",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\PromotionByProduct.cs",
-              "RelativeToolTip": "Entity\\PromotionByProduct.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T12:42:08.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "PromotionDao.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\PromotionDao.cs",
               "RelativeDocumentMoniker": "DAL\\PromotionDao.cs",
               "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\PromotionDao.cs",
               "RelativeToolTip": "DAL\\PromotionDao.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAHgAAAANAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAgwFgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T11:28:14.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "PromotionBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Business\\PromotionBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\PromotionBusiness.cs",
+              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Business\\PromotionBusiness.cs",
+              "RelativeToolTip": "Business\\PromotionBusiness.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowCUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T13:58:26.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Promotion.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Promotion.cs",
               "RelativeDocumentMoniker": "Entity\\Promotion.cs",
               "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Promotion.cs",
               "RelativeToolTip": "Entity\\Promotion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T11:25:41.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "OrderDao.cs",
+              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\OrderDao.cs",
+              "RelativeDocumentMoniker": "DAL\\OrderDao.cs",
+              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\OrderDao.cs",
+              "RelativeToolTip": "DAL\\OrderDao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T15:46:33.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "OrderBusiness.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Business\\OrderBusiness.cs",
               "RelativeDocumentMoniker": "Business\\OrderBusiness.cs",
               "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Business\\OrderBusiness.cs",
               "RelativeToolTip": "Business\\OrderBusiness.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAJAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T21:30:38.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Item.cs",
-              "RelativeDocumentMoniker": "Entity\\Item.cs",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Item.cs",
-              "RelativeToolTip": "Entity\\Item.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "DocumentIndex": 3,
+              "Title": "ProductDao.cs",
+              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\ProductDao.cs",
+              "RelativeDocumentMoniker": "DAL\\ProductDao.cs",
+              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\DAL\\ProductDao.cs",
+              "RelativeToolTip": "DAL\\ProductDao.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAzwPgAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T20:50:20.574Z",
+              "WhenOpened": "2024-07-21T13:56:05.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Order.cs",
-              "RelativeDocumentMoniker": "Entity\\Order.cs",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\Entity\\Order.cs",
-              "RelativeToolTip": "Entity\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T20:46:38.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "SaleForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\UI\\SaleForm.cs",
               "RelativeDocumentMoniker": "UI\\SaleForm.cs",
               "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\SaleSystem\\UI\\SaleForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "UI\\SaleForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T22:24:39.123Z"
+              "WhenOpened": "2024-07-18T22:24:39.123Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

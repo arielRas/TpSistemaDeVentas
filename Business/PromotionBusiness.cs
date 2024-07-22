@@ -14,11 +14,14 @@ namespace Business
         private readonly ProductDao _productDao = new ProductDao();
 
 
+        //METODO PARA TRAER LAS PROMOCIONES VIGENTES
         public List<Promotion> GetCurrentPromotions()
         {
             try
             {
                 List<Promotion> promotion = _promotionDao.GetPromotionsByDate(DateTime.Now);
+
+                if (promotion.Count() == 0) throw new Exception("No se encontraron promociones vigentes");
 
                 return GetRelationships(promotion);
 
@@ -43,12 +46,14 @@ namespace Business
             {
                 foreach (var promotion in promotions)
                 {
-                    if (promotion is PromotionByProduct)
+                    if(promotion is PromotionByProduct)
                     {
-                        (promotion as PromotionByProduct).Products = _promotionDao.GetPromotionProductDetail(promotion.IdPromotion);
+                        (promotion as PromotionByProduct).ProductList = _promotionDao.GetPromotionProductDetail(promotion.IdPromotion);
                     }
-                    else
-                        (promotion as PromotionByQuantity).Products = _promotionDao.GetPromotionQuantityDetail(promotion.IdPromotion);
+                    if (promotion is PromotionByQuantity)
+                    {
+                        (promotion as PromotionByQuantity).ProductList = _promotionDao.GetPromotionQuantityDetail(promotion.IdPromotion);
+                    }
                 }
                 return promotions;
             }
@@ -66,10 +71,10 @@ namespace Business
                 {
                     if (promotion is PromotionByProduct)
                     {
-                        (promotion as PromotionByProduct).Products.ForEach(P => P = GetProductById(P.IdProduct));
+                        (promotion as PromotionByProduct).ProductList.ForEach(P => P = GetProductById(P.IdProduct));
                     }
                     else
-                        (promotion as PromotionByQuantity).Products.ForEach(P => P._product = GetProductById(P._product.IdProduct));
+                        (promotion as PromotionByQuantity).ProductList.ForEach(P => P._product = GetProductById(P._product.IdProduct));
                 }
                 return promotions;
             }

@@ -48,6 +48,7 @@
     <Compile Include="CustomerTypeDao.cs" />
     <Compile Include="OrderDao.cs" />
     <Compile Include="OrderItemDao.cs" />
+    <Compile Include="OrderPromotionDao.cs" />
     <Compile Include="ProductBrandDao.cs" />
     <Compile Include="ProductCategoryDao.cs" />
     <Compile Include="ProductDao.cs" />
