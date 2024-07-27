@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,25 @@ namespace UI
 {
     public partial class SaleForm : Form
     {
+        private Order order = null;
+
         public SaleForm()
         {
             InitializeComponent();
+        }
+
+        private void btnGenerarPedido_Click(object sender, EventArgs e) //BOTON GENERAR PEDIDO
+        {
+            try
+            {
+                order = new Order();
+                GroupProducto.Enabled = true;
+                GroupCliente.Enabled = true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
