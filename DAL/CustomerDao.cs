@@ -15,7 +15,7 @@ namespace DAL
         private readonly CustomerTypeDao _typeDao = new CustomerTypeDao();
         private readonly CustomerIdentifierTypeDao _identifierDao = new CustomerIdentifierTypeDao();
 
-        public Customer GetCustomerByIdNumber(Int64 idNumber, string idType)
+        public Customer GetCustomerByIdNumber(Int64 idNumber)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
 
