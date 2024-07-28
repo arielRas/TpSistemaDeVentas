@@ -43,27 +43,15 @@ namespace Business
             catch { throw; }            
         }
 
-        public List<Product> GetProductsByCategory(string category)
+        public List<Product> GetAllProducts(string category, string brand, string name)
         {
             try
             {
-                List<Product> products = productDao.GetProductsByCategory(category);
+                List<Product> products = productDao.GetAllProducts(category, brand, name);
                 products.ForEach(p => p.Price = GetCurrentPrice(p.IdProduct));
                 return products;
             }
             catch { throw; }
         }
-
-        public List<Product> GetProductsByBrand(string brand)
-        {
-            try
-            {
-                List<Product> products = productDao.GetProductsByBrand(brand);
-                products.ForEach(p => p.Price = GetCurrentPrice(p.IdProduct));
-                return products;
-            }
-            catch { throw; }
-        }        
-
     }
 }

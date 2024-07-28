@@ -44,7 +44,9 @@
   <ItemGroup>
     <Compile Include="CustomerBusiness.cs" />
     <Compile Include="OrderBusiness.cs" />
+    <Compile Include="ProductBrandBusiness.cs" />
     <Compile Include="ProductBusiness.cs" />
+    <Compile Include="ProductCategoryBusiness.cs" />
     <Compile Include="PromotionBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

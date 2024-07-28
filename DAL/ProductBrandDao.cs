@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    internal class ProductBrandDao
+    public class ProductBrandDao
     {
         public int GetIdByName(string brandName)
         {
@@ -62,6 +62,37 @@ namespace DAL
                         throw new Exception("No se encuentra el nombre para el id ingresado");
                 }
             }
+        }
+
+        public List<string> GetBrandNames()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
+
+            string sqlQuery = "SELECT [NAME] FROM PRODUCT_BRAND";
+
+            var brandNames = new List<string>();
+
+            try
+            {
+                using(var connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using(var command = new SqlCommand(sqlQuery, connection))
+                    {
+                        using(SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                brandNames.Add(reader.GetString(0));
+                            }
+
+                            return brandNames;
+                        }
+                    }
+                }
+            }
+            catch{ throw; }
         }
     }
 }

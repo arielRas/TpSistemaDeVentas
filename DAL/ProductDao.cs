@@ -104,31 +104,59 @@ namespace DAL
             }
             catch { throw; }
         }
-            
-        public List<Product> GetProductsByCategory(string category)
+
+        public List<Product> GetAllProducts(string category, string brand, string name)
         {
-            var products = new List<Product>();
+            List<Product> products = new List<Product>();
 
             string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
 
             string sqlQuery = @"
                 SELECT P.ID_PRODUCT,P.[NAME],PB.[NAME],PC.[NAME] 
-                FROM [PRODUCT] AS P 
-                JOIN PRODUCT_BRAND AS PB ON P.ID_BRAND = PB.ID_BRAND 
-                JOIN PRODUCT_CATEGORY AS PC ON P.ID_CATEGORY = PC.ID_CATEGORY 
-                WHERE PC.[NAME] = @category";
+                FROM 
+	                [PRODUCT] AS P 
+                JOIN 
+	                PRODUCT_BRAND AS PB 
+	                ON P.ID_BRAND = PB.ID_BRAND 
+                JOIN 
+	                PRODUCT_CATEGORY AS PC 
+	                ON P.ID_CATEGORY = PC.ID_CATEGORY ";           
 
             try
             {
-                using (var connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
 
-                    using (var command = new SqlCommand(sqlQuery, connection))
+                    using (var command = new SqlCommand())
                     {
-                        command.Parameters.AddWithValue("@category", category);
+                        string whereClause = "WHERE ";
 
-                        using (var reader = command.ExecuteReader())
+                        if (!string.IsNullOrEmpty(category))
+                        {
+                            whereClause += "PC.[NAME] = @category ";
+                            command.Parameters.AddWithValue("@category", category);
+                        }
+
+                        if (!string.IsNullOrEmpty(brand))
+                        {
+                            if (!string.IsNullOrEmpty(category)) whereClause += "AND ";
+                            whereClause += "PB.[NAME] = @brand ";
+                            command.Parameters.AddWithValue("@brand", brand);
+                        }
+
+                        if (!string.IsNullOrEmpty(name))
+                        {
+                            if (!string.IsNullOrEmpty(category) || (!string.IsNullOrEmpty(brand))) whereClause += "AND ";
+                            whereClause += "P.[NAME] LIKE @name";
+                            command.Parameters.AddWithValue("@name", "%"+name+"%");
+                        }
+
+                        sqlQuery += whereClause;
+                        command.Connection = connection;
+                        command.CommandText = sqlQuery;
+
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())
                             {
@@ -146,57 +174,12 @@ namespace DAL
                             return products;
                         }
                     }
-                }
-            }
-            catch { throw; }            
-        }
 
-        public List<Product> GetProductsByBrand(string brand)
-        {
-            var products = new List<Product>();
-
-            string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
-
-            string sqlQuery = @"
-                SELECT P.ID_PRODUCT,P.[NAME],PB.[NAME],PC.[NAME] 
-                FROM [PRODUCT] AS P 
-                JOIN PRODUCT_BRAND AS PB ON P.ID_BRAND = PB.ID_BRAND 
-                JOIN PRODUCT_CATEGORY AS PC ON P.ID_CATEGORY = PC.ID_CATEGORY 
-                WHERE PB.[NAME] = @brand";
-
-            try
-            {
-                using (var connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-
-                    using (var command = new SqlCommand(sqlQuery, connection))
-                    {
-                        command.Parameters.AddWithValue("@brand", brand);
-
-                        using (var reader = command.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                var product = new Product
-                                {
-                                    IdProduct = reader.GetInt32(0),
-                                    Name = reader.GetString(1),
-                                    Brand = reader.GetString(2),
-                                    Category = reader.GetString(3)
-                                };
-
-                                products.Add(product);
-                            }
-
-                            return products;
-                        }
-                    }
                 }
             }
             catch { throw; }
         }
-
+        
         public double GetPrice(int idProduct, DateTime date)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;

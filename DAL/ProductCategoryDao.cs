@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    internal class ProductCategoryDao
+    public class ProductCategoryDao
     {
         public int GetIdByName(string categoryName)
         {
@@ -60,6 +60,37 @@ namespace DAL
                         throw new Exception("No se encuentra el nombre para el id ingresado");
                 }
             }
+        }
+
+        public List<string> GetCategoryNames()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MyStoreDb"].ConnectionString;
+
+            string sqlQuery = "SELECT [NAME] FROM PRODUCT_CATEGORY";
+
+            var categoryNames = new List<string>();
+
+            try
+            {
+                using (var connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (var command = new SqlCommand(sqlQuery, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                categoryNames.Add(reader.GetString(0));
+                            }
+
+                            return categoryNames;
+                        }
+                    }
+                }
+            }
+            catch { throw; }
         }
     }
 }
