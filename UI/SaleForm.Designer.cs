@@ -59,6 +59,8 @@
             this.txtApellidoCliente = new System.Windows.Forms.TextBox();
             this.txtBuscarPorIdNumber = new System.Windows.Forms.TextBox();
             this.btnLimpiarFiltros = new System.Windows.Forms.Button();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.txtCantidadProducto = new System.Windows.Forms.TextBox();
             this.GroupProducto.SuspendLayout();
             this.GroupProductoFiltro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts)).BeginInit();
@@ -68,7 +70,9 @@
             // 
             // GroupProducto
             // 
+            this.GroupProducto.Controls.Add(this.lblCantidad);
             this.GroupProducto.Controls.Add(this.btnCancelarPedido);
+            this.GroupProducto.Controls.Add(this.txtCantidadProducto);
             this.GroupProducto.Controls.Add(this.btnVerStock);
             this.GroupProducto.Controls.Add(this.btnConfirmarPedido);
             this.GroupProducto.Controls.Add(this.btnVerPedido);
@@ -85,48 +89,49 @@
             // 
             // btnCancelarPedido
             // 
-            this.btnCancelarPedido.Location = new System.Drawing.Point(822, 371);
+            this.btnCancelarPedido.Location = new System.Drawing.Point(822, 394);
             this.btnCancelarPedido.Name = "btnCancelarPedido";
-            this.btnCancelarPedido.Size = new System.Drawing.Size(98, 42);
+            this.btnCancelarPedido.Size = new System.Drawing.Size(98, 34);
             this.btnCancelarPedido.TabIndex = 14;
             this.btnCancelarPedido.Text = "CANCELAR PEDIDO";
             this.btnCancelarPedido.UseVisualStyleBackColor = true;
             // 
             // btnVerStock
             // 
-            this.btnVerStock.Location = new System.Drawing.Point(822, 316);
+            this.btnVerStock.Location = new System.Drawing.Point(718, 348);
             this.btnVerStock.Name = "btnVerStock";
-            this.btnVerStock.Size = new System.Drawing.Size(98, 42);
+            this.btnVerStock.Size = new System.Drawing.Size(202, 32);
             this.btnVerStock.TabIndex = 13;
             this.btnVerStock.Text = "VER STOCK";
             this.btnVerStock.UseVisualStyleBackColor = true;
             // 
             // btnConfirmarPedido
             // 
-            this.btnConfirmarPedido.Location = new System.Drawing.Point(718, 428);
+            this.btnConfirmarPedido.Location = new System.Drawing.Point(718, 437);
             this.btnConfirmarPedido.Name = "btnConfirmarPedido";
-            this.btnConfirmarPedido.Size = new System.Drawing.Size(202, 42);
+            this.btnConfirmarPedido.Size = new System.Drawing.Size(202, 33);
             this.btnConfirmarPedido.TabIndex = 12;
             this.btnConfirmarPedido.Text = "CONFIRMAR PEDIDO";
             this.btnConfirmarPedido.UseVisualStyleBackColor = true;
             // 
             // btnVerPedido
             // 
-            this.btnVerPedido.Location = new System.Drawing.Point(718, 371);
+            this.btnVerPedido.Location = new System.Drawing.Point(718, 394);
             this.btnVerPedido.Name = "btnVerPedido";
-            this.btnVerPedido.Size = new System.Drawing.Size(98, 42);
+            this.btnVerPedido.Size = new System.Drawing.Size(98, 34);
             this.btnVerPedido.TabIndex = 11;
             this.btnVerPedido.Text = "VER PEDIDO";
             this.btnVerPedido.UseVisualStyleBackColor = true;
             // 
             // btnAgregarProducto
             // 
-            this.btnAgregarProducto.Location = new System.Drawing.Point(718, 316);
+            this.btnAgregarProducto.Location = new System.Drawing.Point(718, 297);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(98, 42);
+            this.btnAgregarProducto.Size = new System.Drawing.Size(154, 39);
             this.btnAgregarProducto.TabIndex = 10;
             this.btnAgregarProducto.Text = "AGREGAR PRODUCTO";
             this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
             // 
             // GroupProductoFiltro
             // 
@@ -140,7 +145,7 @@
             this.GroupProductoFiltro.Controls.Add(this.lblFiltrarPorCategoria);
             this.GroupProductoFiltro.Location = new System.Drawing.Point(708, 19);
             this.GroupProductoFiltro.Name = "GroupProductoFiltro";
-            this.GroupProductoFiltro.Size = new System.Drawing.Size(222, 266);
+            this.GroupProductoFiltro.Size = new System.Drawing.Size(222, 256);
             this.GroupProductoFiltro.TabIndex = 9;
             this.GroupProductoFiltro.TabStop = false;
             this.GroupProductoFiltro.Text = "Filtro";
@@ -149,7 +154,7 @@
             // 
             this.CboxFiltroMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CboxFiltroMarca.FormattingEnabled = true;
-            this.CboxFiltroMarca.Location = new System.Drawing.Point(26, 97);
+            this.CboxFiltroMarca.Location = new System.Drawing.Point(26, 89);
             this.CboxFiltroMarca.Name = "CboxFiltroMarca";
             this.CboxFiltroMarca.Size = new System.Drawing.Size(166, 21);
             this.CboxFiltroMarca.TabIndex = 4;
@@ -157,7 +162,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 136);
+            this.label1.Location = new System.Drawing.Point(23, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 8;
@@ -165,7 +170,7 @@
             // 
             // btnBuscarProducto
             // 
-            this.btnBuscarProducto.Location = new System.Drawing.Point(26, 184);
+            this.btnBuscarProducto.Location = new System.Drawing.Point(26, 176);
             this.btnBuscarProducto.Name = "btnBuscarProducto";
             this.btnBuscarProducto.Size = new System.Drawing.Size(166, 30);
             this.btnBuscarProducto.TabIndex = 1;
@@ -175,7 +180,7 @@
             // 
             // txtNombreProducto
             // 
-            this.txtNombreProducto.Location = new System.Drawing.Point(26, 152);
+            this.txtNombreProducto.Location = new System.Drawing.Point(26, 144);
             this.txtNombreProducto.Name = "txtNombreProducto";
             this.txtNombreProducto.Size = new System.Drawing.Size(166, 20);
             this.txtNombreProducto.TabIndex = 7;
@@ -184,7 +189,7 @@
             // 
             this.CboxFiltroCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CboxFiltroCategoria.FormattingEnabled = true;
-            this.CboxFiltroCategoria.Location = new System.Drawing.Point(26, 43);
+            this.CboxFiltroCategoria.Location = new System.Drawing.Point(26, 35);
             this.CboxFiltroCategoria.Name = "CboxFiltroCategoria";
             this.CboxFiltroCategoria.Size = new System.Drawing.Size(166, 21);
             this.CboxFiltroCategoria.TabIndex = 3;
@@ -192,7 +197,7 @@
             // lblFiltroMarca
             // 
             this.lblFiltroMarca.AutoSize = true;
-            this.lblFiltroMarca.Location = new System.Drawing.Point(23, 81);
+            this.lblFiltroMarca.Location = new System.Drawing.Point(23, 73);
             this.lblFiltroMarca.Name = "lblFiltroMarca";
             this.lblFiltroMarca.Size = new System.Drawing.Size(37, 13);
             this.lblFiltroMarca.TabIndex = 6;
@@ -201,7 +206,7 @@
             // lblFiltrarPorCategoria
             // 
             this.lblFiltrarPorCategoria.AutoSize = true;
-            this.lblFiltrarPorCategoria.Location = new System.Drawing.Point(23, 27);
+            this.lblFiltrarPorCategoria.Location = new System.Drawing.Point(23, 19);
             this.lblFiltrarPorCategoria.Name = "lblFiltrarPorCategoria";
             this.lblFiltrarPorCategoria.Size = new System.Drawing.Size(52, 13);
             this.lblFiltrarPorCategoria.TabIndex = 5;
@@ -211,6 +216,7 @@
             // 
             this.gridProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridProducts.Location = new System.Drawing.Point(6, 19);
+            this.gridProducts.MultiSelect = false;
             this.gridProducts.Name = "gridProducts";
             this.gridProducts.ReadOnly = true;
             this.gridProducts.Size = new System.Drawing.Size(691, 451);
@@ -360,13 +366,29 @@
             // 
             // btnLimpiarFiltros
             // 
-            this.btnLimpiarFiltros.Location = new System.Drawing.Point(26, 220);
+            this.btnLimpiarFiltros.Location = new System.Drawing.Point(26, 212);
             this.btnLimpiarFiltros.Name = "btnLimpiarFiltros";
             this.btnLimpiarFiltros.Size = new System.Drawing.Size(166, 30);
             this.btnLimpiarFiltros.TabIndex = 9;
             this.btnLimpiarFiltros.Text = "LIMPIAR FILTROS";
             this.btnLimpiarFiltros.UseVisualStyleBackColor = true;
             this.btnLimpiarFiltros.Click += new System.EventHandler(this.btnLimpiarFiltros_Click);
+            // 
+            // lblCantidad
+            // 
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Location = new System.Drawing.Point(878, 296);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(49, 13);
+            this.lblCantidad.TabIndex = 11;
+            this.lblCantidad.Text = "Cantidad";
+            // 
+            // txtCantidadProducto
+            // 
+            this.txtCantidadProducto.Location = new System.Drawing.Point(881, 316);
+            this.txtCantidadProducto.Name = "txtCantidadProducto";
+            this.txtCantidadProducto.Size = new System.Drawing.Size(39, 20);
+            this.txtCantidadProducto.TabIndex = 10;
             // 
             // SaleForm
             // 
@@ -380,6 +402,7 @@
             this.Name = "SaleForm";
             this.Text = "Form1";
             this.GroupProducto.ResumeLayout(false);
+            this.GroupProducto.PerformLayout();
             this.GroupProductoFiltro.ResumeLayout(false);
             this.GroupProductoFiltro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts)).EndInit();
@@ -423,6 +446,8 @@
         private System.Windows.Forms.Label lblApellidoCliente;
         private System.Windows.Forms.Button btnActualizarCliente;
         private System.Windows.Forms.Button btnLimpiarFiltros;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.TextBox txtCantidadProducto;
     }
 }
 

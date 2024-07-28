@@ -21,6 +21,7 @@ namespace UI
         }
 
         //CLASES PRIVADAS
+        private List<Product> products = new List<Product>();
         private Order order = null;
         private ProductBusiness _product = new ProductBusiness();
         private ProductCategoryBusiness _category = new ProductCategoryBusiness();
@@ -28,17 +29,17 @@ namespace UI
 
 
         //METODOS PRIVADOS
-        private List<Product> BuscarProducto(string categoria, string marca, string nombre) //BUSCAR PRODUCTO
+        private List<Product> FindProduct(string category, string brand, string name) //BUSCAR PRODUCTO
         {
-            if (!string.IsNullOrEmpty(categoria) || !string.IsNullOrEmpty(marca) || !string.IsNullOrEmpty(nombre))
+            if (!string.IsNullOrEmpty(category) || !string.IsNullOrEmpty(brand) || !string.IsNullOrEmpty(name))
             {
-                return _product.GetAllProducts(categoria, marca, nombre);
+                return _product.GetAllProducts(category, brand, name);
             }
             else
                 return _product.GetAllProducts();
         }
 
-        private void ConfigurarColumnas() //CONFIGURA COLUMNAS DEL DATAGRIDVIEW
+        private void SetGridColumnSize() //CONFIGURA COLUMNAS DEL DATAGRIDVIEW
         {
             gridProducts.Columns[0].Width = 60;
             gridProducts.Columns[1].Width = 90;
@@ -72,12 +73,13 @@ namespace UI
         {
             try
             {                
-                string categoria = CboxFiltroCategoria.SelectedItem?.ToString();
-                string marca = CboxFiltroMarca.SelectedItem?.ToString();
-                string nombre = txtNombreProducto.Text; 
+                string category = CboxFiltroCategoria.SelectedItem?.ToString();
+                string brand = CboxFiltroMarca.SelectedItem?.ToString();
+                string name = txtNombreProducto.Text; 
+                products = FindProduct(category, brand, name);
                 gridProducts.DataSource = null;
-                gridProducts.DataSource = BuscarProducto(categoria, marca, nombre);
-                ConfigurarColumnas();
+                gridProducts.DataSource = products;
+                SetGridColumnSize();
                 
             }
             catch(Exception ex)
@@ -98,6 +100,40 @@ namespace UI
             {
                 MessageBox.Show(ex.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }            
+        }
+
+        private void btnAgregarProducto_Click(object sender, EventArgs e) //BOTON AGREGAR PRODUCTO
+        {
+            try
+            {
+                if (gridProducts.SelectedRows.Count == 0) throw new Exception("Debe seleccionar un producto para agregar al pedido");
+
+                if(string.IsNullOrEmpty(txtCantidadProducto.Text)) throw new Exception("Debe ingresar la cantidad que desea agregar al pedido");
+
+                int id = Convert.ToInt32(gridProducts.SelectedRows[0].Cells[0].Value);
+
+                int cantidad = Convert.ToInt32(txtCantidadProducto.Text);
+
+                var item = new Item
+                {
+                    _product = products.Where(P => P.IdProduct == id).SingleOrDefault(),
+                    Quantity = cantidad
+                };
+
+                order.Items.Add(item);
+
+                txtCantidadProducto.Text = string.Empty;
+            }
+            catch (FormatException)
+            {
+                txtCantidadProducto.Focus();
+                string message = "El apartado cantidad solo acepta valores numericos";
+                MessageBox.Show(message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

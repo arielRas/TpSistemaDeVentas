@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{23AF4E9D-38A7-4D08-8D89-1B6310C496E0}|UI\\UI.csproj|solutionrelative:ui\\saleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\business\\productbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|solutionrelative:business\\productbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23AF4E9D-38A7-4D08-8D89-1B6310C496E0}|UI\\UI.csproj|C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\ui\\saleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{23AF4E9D-38A7-4D08-8D89-1B6310C496E0}|UI\\UI.csproj|solutionrelative:ui\\saleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|c:\\users\\ariel\\desktop\\repositorios\\tpsistemadeventas\\entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61157313-B8A5-43D4-8933-F26A54688618}|Entity\\Entity.csproj|solutionrelative:entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|solutionrelative:dal\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\business\\productbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69A41DFE-93CE-4873-A304-A29BA98F4577}|Business\\Business.csproj|solutionrelative:business\\productbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C11E7BD-CDE9-4E31-B881-D6B8848E1295}|DAL\\DAL.csproj|C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\dal\\productcategorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "SaleForm.cs",
+              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\UI\\SaleForm.cs",
+              "RelativeDocumentMoniker": "UI\\SaleForm.cs",
+              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\UI\\SaleForm.cs*",
+              "RelativeToolTip": "UI\\SaleForm.cs*",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAmwIAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T20:33:23.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\Entity\\Product.cs",
               "RelativeDocumentMoniker": "Entity\\Product.cs",
@@ -63,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ProductBusiness.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\Business\\ProductBusiness.cs",
               "RelativeDocumentMoniker": "Business\\ProductBusiness.cs",
@@ -76,33 +89,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductDao.cs",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\DAL\\ProductDao.cs",
               "RelativeDocumentMoniker": "DAL\\ProductDao.cs",
               "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\DAL\\ProductDao.cs",
               "RelativeToolTip": "DAL\\ProductDao.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA4wHIAAAAQAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwGsAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-27T14:59:46.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SaleForm.cs",
-              "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\UI\\SaleForm.cs",
-              "RelativeDocumentMoniker": "UI\\SaleForm.cs",
-              "ToolTip": "C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\UI\\SaleForm.cs*",
-              "RelativeToolTip": "UI\\SaleForm.cs*",
-              "ViewState": "AQIAAB4AAAAAAAAAAIA7wEkAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T19:25:01.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "SaleForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Ariel\\Desktop\\Repositorios\\TpSistemaDeVentas\\UI\\SaleForm.cs",
               "RelativeDocumentMoniker": "UI\\SaleForm.cs",
