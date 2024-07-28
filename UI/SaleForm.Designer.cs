@@ -123,6 +123,7 @@
             this.btnVerPedido.TabIndex = 11;
             this.btnVerPedido.Text = "VER PEDIDO";
             this.btnVerPedido.UseVisualStyleBackColor = true;
+            this.btnVerPedido.Click += new System.EventHandler(this.btnVerPedido_Click);
             // 
             // btnAgregarProducto
             // 
@@ -341,6 +342,7 @@
             // 
             this.txtEmailCliente.Location = new System.Drawing.Point(39, 294);
             this.txtEmailCliente.Name = "txtEmailCliente";
+            this.txtEmailCliente.ReadOnly = true;
             this.txtEmailCliente.Size = new System.Drawing.Size(166, 20);
             this.txtEmailCliente.TabIndex = 12;
             // 
@@ -348,6 +350,7 @@
             // 
             this.txtNombreCliente.Location = new System.Drawing.Point(39, 248);
             this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.ReadOnly = true;
             this.txtNombreCliente.Size = new System.Drawing.Size(166, 20);
             this.txtNombreCliente.TabIndex = 11;
             // 
@@ -355,6 +358,7 @@
             // 
             this.txtApellidoCliente.Location = new System.Drawing.Point(39, 199);
             this.txtApellidoCliente.Name = "txtApellidoCliente";
+            this.txtApellidoCliente.ReadOnly = true;
             this.txtApellidoCliente.Size = new System.Drawing.Size(166, 20);
             this.txtApellidoCliente.TabIndex = 10;
             // 

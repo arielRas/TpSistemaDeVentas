@@ -156,5 +156,20 @@ namespace UI
                 MessageBox.Show(ex.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnVerPedido_Click(object sender, EventArgs e) //BOTON VER PEDIDO
+        {
+            try
+            {
+                var viewFormOrder = new SaleFormViewOrder(this.order);
+
+                if(viewFormOrder.ShowDialog() == DialogResult.OK) this.order = viewFormOrder.order;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
