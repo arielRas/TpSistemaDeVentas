@@ -104,6 +104,7 @@
             this.btnVerStock.TabIndex = 13;
             this.btnVerStock.Text = "VER STOCK";
             this.btnVerStock.UseVisualStyleBackColor = true;
+            this.btnVerStock.Click += new System.EventHandler(this.btnVerStock_Click);
             // 
             // btnConfirmarPedido
             // 

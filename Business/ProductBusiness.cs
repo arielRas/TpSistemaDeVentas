@@ -53,5 +53,10 @@ namespace Business
             }
             catch { throw; }
         }
+
+        public int GetStockById(int idProduct)
+        {
+            return productDao.GetStockById(idProduct);
+        }
     }
 }

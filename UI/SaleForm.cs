@@ -135,5 +135,26 @@ namespace UI
                 MessageBox.Show(ex.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnVerStock_Click(object sender, EventArgs e) //BOTON VER STOCK
+        {
+            try
+            {
+                if (gridProducts.SelectedRows.Count == 0) throw new Exception("Debe seleccionar un producto para ver el stock disponible");
+
+                int id = Convert.ToInt32(gridProducts.SelectedRows[0].Cells[0].Value);
+
+                int stock = _product.GetStockById(id);
+
+                string message = $"Stock disponible: {stock}";
+
+                MessageBox.Show(message, "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
